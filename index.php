@@ -31,3 +31,4 @@
 </body>
 
 </html>
+<?php include 'test.php'; ?>

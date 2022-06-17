@@ -16,8 +16,8 @@ create table products(
 	product_description text ,
 	product_price decimal(6,2) not null,
 	category varchar(200) not null,
-	create_at datetime   DEFAULT CURRENT_TIMESTAMP,
-	update_at datetime   DEFAULT CURRENT_TIMESTAMP
+	created_at datetime   DEFAULT CURRENT_TIMESTAMP,
+	updated_at datetime   DEFAULT CURRENT_TIMESTAMP
 )
 
 
@@ -25,8 +25,8 @@ create table categories(
 
 	cid int auto_increment primary key not null,
 	category_name varchar(200)
-	create_at datetime   DEFAULT CURRENT_TIMESTAMP,
-        update_at datetime   DEFAULT CURRENT_TIMESTAMP
+	created_at datetime   DEFAULT CURRENT_TIMESTAMP,
+    updated_at datetime   DEFAULT CURRENT_TIMESTAMP
 );
 
 

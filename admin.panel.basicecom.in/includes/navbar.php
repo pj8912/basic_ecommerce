@@ -2,21 +2,21 @@
 
 function main_navbar($loginStatus)
 {
-    $url = 'http://localhost/basic_ecommerce/admin.panel.basicecommerce.in';
+    $url = 'http://localhost/basic_ecommerce/admin.panel.basicecom.in';
     // $url = 'http://basicecom.in';
 
     echo '
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="http://localhost/basic_ecommerce/">BasicEcom</a>
+    <a class="navbar-brand" href="'.$url.'">BasicEcom</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost/basic_ecommerce/">Home</a>
+          <a class="nav-link" href="'.$url.'">Home</a>
         </li>
    
       </ul>
@@ -26,10 +26,10 @@ function main_navbar($loginStatus)
       ';
     if ($loginStatus == false) {
         echo '	<li class="nav-item">
-        <a class="nav-link" href="' . $url . '/users/login.php">Login</a>
+        <a class="nav-link" href="' . $url . '/admin/login.php">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="' . $url . '/users/signup.php">Sign Up</a>
+        <a class="nav-link" href="' . $url . '/admin/signup.php">Sign Up</a>
       </li>
     ';
     }
@@ -37,7 +37,7 @@ function main_navbar($loginStatus)
     if ($loginStatus == true) {
         echo '
   <li class="nav-item">
-    <a class="nav-link" href="' . $url . '/users/logout.php">Logout</a>
+    <a class="nav-link" href="' . $url . '/admin/logout.php">Logout</a>
   </li>';
     }
     echo '

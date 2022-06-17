@@ -5,7 +5,8 @@ session_start();
 
 <?php
 if (isset($_SESSION['a_id'])) {
-    echo $_SESSION['a_id'];
+    // echo $_SESSION['a_id'];
+    // return true;
 } else {
     header('Location: index.php');
     exit();
@@ -27,8 +28,20 @@ if (isset($_SESSION['a_id'])) {
 </head>
 
 <body>
+    <?php
+    include 'includes/navbar.php';
+    main_navbar(true);
+    ?>
 
+    <div class="main-container">
+        <?php
+        require 'includes/side-nav.php';
+        side_nav();
+        ?>
+        <div class="view-box card">
+        </div>
 
+    </div>
 </body>
 
 </html>

@@ -5,13 +5,9 @@ define('URL', 'http://localhost/basic_ecommerce');
 
 
 
+//ADMIN
 // local
-// define('ADMIN_URL', 'http://localhost/spoz/spoz.admin.panel.sporazzo.com');
-
-
-
-
-
+define('ADMIN_URL', 'http://localhost/basic_ecommerce/admin.panel.basicecom.in');
 //main
-//define('ADMIN_URL', 'http://spoz.admin.panel.sporazzo.com');
+//define('ADMIN_URL', 'http://admin.panel.basicecom.in');
 

@@ -1,6 +1,6 @@
 <?php
 
-// define('URL', 'http://sporazzo.com');
+define('URL', 'http://basicecom.com');
 // define('HOME', 'http://sporazzo.com/home.php');
 
 

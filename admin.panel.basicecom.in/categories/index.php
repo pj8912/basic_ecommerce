@@ -104,12 +104,12 @@
                         <td> <img src="images/' . $row['category_Img'] . '" alt="image" class="card-img p-1"></td>
                         <td>'.$row['category_name'].'</td>
                         <td>
-                        <a data-bs-toggle="modal" data-bs-target="#editModal">edit</a> 
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#editModal">edit</a> 
 
                         
                         ';
-                        
-                        $sql = "SELECT * FROM categories WHERE cid = {$row['cid']}";
+                        $id = $row['cid'];
+                        $sql = "SELECT * FROM categories WHERE cid = '$id'";
                         $res = mysqli_query($conn, $sql);
                         while($r = mysqli_fetch_assoc($res)){
                             echo '

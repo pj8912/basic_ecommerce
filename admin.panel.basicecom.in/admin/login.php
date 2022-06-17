@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 if (isset($_POST['lbtn'])) {
 
@@ -11,7 +12,7 @@ if (isset($_POST['lbtn'])) {
     $sql = "SELECT * FROM admins WHERE admin_email = '$email'";
     $result = mysqli_query($conn, $sql);
     $num = mysqli_num_rows($result);
-    if ($num < 1) {
+    if ($num < 0) {
         header('location: ../index.php?login-err');
         exit();
     } else {

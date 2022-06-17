@@ -4,7 +4,7 @@ main_header('HOME');
 ?>
 
 <?php
-include 'includes navbar.php';
+include 'includes/navbar.php';
 main_navbar();
 ?>
 

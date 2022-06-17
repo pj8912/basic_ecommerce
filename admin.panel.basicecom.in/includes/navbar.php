@@ -2,8 +2,8 @@
 
 function main_navbar($loginStatus)
 {
-    // $url = 'http://localhost/basic_ecommerce';
-    $url = 'http://basicecom.com';
+    $url = 'http://localhost/basic_ecommerce/admin.panel.basicecommerce.in';
+    // $url = 'http://basicecom.in';
 
     echo '
 
@@ -18,9 +18,7 @@ function main_navbar($loginStatus)
         <li class="nav-item">
           <a class="nav-link" href="http://localhost/basic_ecommerce/">Home</a>
         </li>
-     <li class="nav-item">
-          <a class="nav-link" href="http://localhost/basic_ecommerce/">About</a>
-        </li>
+   
       </ul>
       
       <ul class="nav justify-content-end mb-2 mb-lg-0">

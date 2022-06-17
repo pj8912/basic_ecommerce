@@ -36,7 +36,7 @@ create table cart(
 	created_at datetime   DEFAULT CURRENT_TIMESTAMP,
 	updated_at datetime   DEFAULT CURRENT_TIMESTAMP
 );
-create table admin(
+create table admins(
 	admin_id int auto_increment primary key not null,
 	admin_name varchar(256)    not null,
 	admin_email varchar(256)    not null,
@@ -44,4 +44,3 @@ create table admin(
 	created_at datetime   DEFAULT CURRENT_TIMESTAMP,
 	updated_at datetime   DEFAULT CURRENT_TIMESTAMP
 );
-

@@ -1,7 +1,10 @@
 <?php
 
-function main_navbar()
+function main_navbar($loginStatus)
 {
+    $url = 'http://localhost/basic_ecommerce';
+    // $url = 'http://basicecom.com';
+
     echo '
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -19,6 +22,29 @@ function main_navbar()
           <a class="nav-link" href="http://localhost/basic_ecommerce/">About</a>
         </li>
       </ul>
+      
+      <ul class="nav justify-content-end mb-2 mb-lg-0">
+
+      ';
+    if ($loginStatus == false) {
+        echo '	<li class="nav-item">
+        <a class="nav-link" href="' . $url . '/users/login.php">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="' . $url . '/users/signup.php">Sign Up</a>
+      </li>
+    ';
+    }
+
+    if ($loginStatus == true) {
+        echo '
+  <li class="nav-item">
+    <a class="nav-link" href="' . $url . '/users/logout.php">Logout</a>
+  </li>';
+    }
+    echo '
+    </ul>	  
+
       </div>
      </div>
   </nav>

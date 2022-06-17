@@ -1,8 +1,7 @@
 <?php
-// require '../config/config.php';
 include '../includes/header.php';
 include '../includes/navbar.php';
-// require '../includes/footer.php';
+include '../includes/footer.php';
 ?>
 
 <?php
@@ -10,7 +9,7 @@ main_header('Sign Up');
 ?>
 
 <?php
-main_navbar();
+main_navbar(false);
 ?>
 
 <div class="m-auto mt-5 card card-body col-md-6">
@@ -37,7 +36,7 @@ main_navbar();
                 Sign Up
             </button>
         </div>
-        <p class="text-center">Already have an account <a href="../index.php">Log in</a></p>
+        <p class="text-center">Already have an account <a href="login.php">Log in</a></p>
     </form>
 
 </div>

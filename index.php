@@ -23,4 +23,3 @@ main_header('HOME');
 </body>
 
 </html>
-<?php include 'test.php'; ?>

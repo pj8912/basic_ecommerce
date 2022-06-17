@@ -3,7 +3,7 @@
 function main_navbar($loginStatus)
 {
     // $url = 'http://localhost/basic_ecommerce';
-    $url = 'http://basicecom.com';
+    $url = 'http://basicecom.in';
 
     echo '
 

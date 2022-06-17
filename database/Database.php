@@ -2,11 +2,15 @@
 class Database
 {
 
-    private $host = 'localhost';
-    private $uname = 'jp98 ';
-    private $pwd = '16uph306';
-    private $dbname = 'basic_ecom';
+    // private $host = 'localhost';
+    // private $uname = 'jp98 ';
+    // private $pwd = '16uph306';
+    // private $dbname = 'basic_ecom';
 
+    private $host = 'localhost';
+    private $uname = 'root ';
+    private $pwd = '';
+    private $dbname = 'basic_ecom';
 
     public function connect()
     {

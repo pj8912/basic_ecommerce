@@ -1,7 +1,7 @@
 <?php
 
-define('URL', 'http://basicecom.com');
-// define('HOME', 'http://sporazzo.com/home.php');
+// define('URL', 'http://basicecom.com');
+define('URL', 'http://localhost/basic_ecommerce');
 
 
 

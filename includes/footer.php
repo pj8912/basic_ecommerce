@@ -1,6 +1,4 @@
 <?php
-
-<?php
 function main_footer()
 {
     echo '
